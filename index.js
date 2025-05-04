@@ -1,7 +1,7 @@
 const pl = require("physics-lab-web-api");
 const axios = require("axios");
 
-const user = new pl.User(process.env.ADMIN, process.env.PASSWORD); // 物实用户名&密码
+const user = new pl.User(process.env.USERNAME, process.env.PASSWORD); // 物实用户名&密码
 
 axios.interceptors.request.use((request) => {
   // console.log("Starting Request\n", request, "-".repeat(10), "\n\n");
